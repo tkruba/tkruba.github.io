@@ -810,6 +810,7 @@ html {
     margin-left: 0px;
     margin-right: 0px;
     display: block;
+    max-height: 600px;
     width: 100%;
     flex-basis: 33.333333%;
   }
