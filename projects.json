@@ -1,0 +1,78 @@
+{
+    "reservia": {
+        "name": "Reservia",
+        "desc": "Reservia, une petite entreprise proposant un outil de planification de vacances. Leur site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+        "image": "Reservia.png",
+        "stacks": [
+            "html",
+            "css"
+        ],
+        "links": {
+            "preview": "https://tkruba.github.io/KrubaTom_02_21062021/",
+            "code": "https://github.com/tkruba/KrubaTom_02_21062021"
+        }
+    },
+    "ohmyfood": {
+        "name": "Ohmyfood",
+        "desc": "Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.",
+        "image": "Ohmyfood.png",
+        "stacks": [
+            "html",
+            "sass"
+        ],
+        "links": {
+            "preview": "https://tkruba.github.io/KrubaTom_03_21072021/",
+            "code": "https://github.com/tkruba/KrubaTom_03_21072021"
+        }
+    },
+    "lachouetteagence": {
+        "name": "La chouette agence",
+        "desc": "L’activité de l’entreprise a bien démarré mais aujourd’hui, elle est en perte de vitesse. En tapant “Entreprise web design Lyon” sur Internet, Sophie s’aperçoit que le site de l’agence apparaît seulement en deuxième page des moteurs de recherche.",
+        "image": "Lachouetteagence.png",
+        "stacks": [
+            "html",
+            "css"
+        ],
+        "links": {
+            "preview": "https://tkruba.github.io/KrubaTom_04_13092021_Edited/",
+            "code": "https://github.com/tkruba/KrubaTom_04_13092021_Edited"
+        }
+    },
+    "kanap": {
+        "name": "Kanap",
+        "desc": "Votre client est Kanap, une marque de canapés qui vend ses produits depuis sa boutique exclusivement. Aujourd’hui, celle-ci souhaiterait avoir une plateforme de e-commerce en plus de sa boutique physique pour vendre ses produits sur Internet.",
+        "image": "Kanap.png",
+        "stacks": [
+            "html",
+            "javascript"
+        ],
+        "links": {
+            "code": "https://github.com/tkruba/KrubaTom_05_12102021"
+        }
+    },
+    "hottakes": {
+        "name": "Hot Takes",
+        "desc": "Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones ». La marque de condiments à base de piment Piiquante, veut développer une application web de critique des sauces piquantes appelée « Hot Takes ».",
+        "image": "Hottakes.png",
+        "stacks": [
+            "nodejs",
+            "mongodb"
+        ],
+        "links": {
+            "code": "https://github.com/tkruba/KrubaTom_06_14112021"
+        }
+    },
+    "groupomania": {
+        "name": "Groupomania",
+        "desc": "Le projet consiste à construire un réseau social interne pour les employés de Groupomania. Le but de cet outil est de faciliter les interactions entre collègues.",
+        "image": "Groupomania.png",
+        "stacks": [
+            "react",
+            "nodejs",
+            "mysql"
+        ],
+        "links": {
+            "code": "https://github.com/tkruba/KrubaTom_07_25122021"
+        }
+    }
+}

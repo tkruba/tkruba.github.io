@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Kruba</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/289f71a5e7.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div id="to_top"></div>
+    <main>
+        <section id="home">
+            <h1>Tom Kruba</h1>
+            <h2>Développeur web</h2>
+            <ul id="links">
+                <li><a href="https://github.com/tkruba"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/tom-kruba"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="./Assets/CV.pdf" target="_blank"><i class="fa-solid fa-file-lines"></i></a></li>
+            </ul>
+            <a href="#about" id="to_about">
+                <span></span>
+                <span></span>
+            </a>
+        </section>
+        <section id="about">
+            <img src="./Assets/Avatar.png" alt="Tom Kruba Avatar"/>
+            <article>
+                <h2>A propos</h2>
+                <p>Je m’appelle <span>Tom Kruba</span> et je suis un <span>Développeur Web</span> vivant à <span>Troyes</span>. <span>Passionné d’informatique</span> depuis mon enfance, j’ai décidé d’en faire ma vocation. Lors de mon parcours scolaire j’ai découvert le métier de <span>Développeur Web</span>, qui fût pour moi, un chemin à suivre. Je souhaite progresser au sein de groupes ambitieux dans le secteur du Web, aussi bien en milieu <span>Front-End</span> que <span>Back-End</span>. Actuellement en apprentissage continu des technologies et structures de ce domaine, j’adore tout particulièrement les possibilités offertes par <span>Javascript</span>, tel que <span>React</span> sur le plan <span>Front-End</span> ou <span>NodeJS</span> sur le plan <span>Back-End</span>.</br>Ma vie en dehors du Web ? Les jeux vidéo, mais, en plus de simplement y jouer, j’organise même des évènements e-sportifs ! J’apprécie également la culture asiatique telle que les mangas ou l’animation japonaise.</p>
+            </article>
+            <aside id="stacks">
+            </aside>
+        </section>
+        <section id="projects">
+            <h2>Projets</h2>
+            <ul>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <h2>Contact</h2>
+        <div id="contact">
+            <form id="contact_form" method="post">
+                <label class="basis-full" for="first_name">Prénom</br>
+                    <input type="text" name="first_name" id="first_name">
+                </label>
+                <label class="basis-full" for="last_name">Nom</br>
+                    <input type="text" name="last_name" id="last_name">
+                </label>
+                <label class="basis-full" for="email">Email</br>
+                    <input type="email" name="email" id="email">
+                </label>
+                <label class="basis-full" for="message">Message</br>
+                    <textarea type="text" name="message" id="message"></textarea>
+                </label>
+                <div class="form_submit">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>

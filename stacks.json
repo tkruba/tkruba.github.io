@@ -1,0 +1,22 @@
+{
+    "acquired": [
+        "html",
+        "css",
+        "javascript",
+        "nodejs",
+        "react",
+        "mongodb",
+        "mysql",
+        "sass",
+        "tailwind"
+    ],
+    "learning": [
+        "symfony"
+    ],
+    "wanted": [
+        "laravel",
+        "threejs",
+        "typescript",
+        "nextjs"
+    ]
+}
