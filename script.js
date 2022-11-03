@@ -36,6 +36,21 @@ const observer = new IntersectionObserver(
 // Lance l'observation de la page
 observer.observe(observed);
 
+const anchors = document.getElementsByTagName('a');
+
+Array.prototype.forEach.call(anchors, el => {
+    const ref = el.getAttribute('href');
+    if (!ref || !ref.includes('#')) return;
+    el.addEventListener('click', e => {
+        e.preventDefault();
+        scrollTo({
+            left: 0,
+            top: document.getElementById(ref.replace(/#/g, '')).getBoundingClientRect().top - (4 * 16) + window.scrollY,
+            behavior: "smooth"
+        });
+    });
+});
+
 
 const docStacks = document.getElementById('stacks');
 async function getStacks() {
@@ -102,15 +117,16 @@ function setProjects() {
                             <div class="card_mid">
                                 <h3>${l.name}</h3>
                                 <p class="project_desc">${l.desc}</p>
+                            </div>
+                            <div class="card_bot">
                                 <ul class="project_stacks">
                                     ${l.stacks.reduce((pv, cv) => pv.concat(
                                         `<li>
-                                            <img src="./Assets/Icons/${cv}.svg" alt="${cv} Icon" />
+                                        <img src="./Assets/Icons/${cv}.svg" alt="${cv} Icon" />
                                         </li>`
                                     ), '')}
                                 </ul>
-                            </div>
-                            <div class="card_bot">
+                                <div class="line"></div>
                                 ${l.links.preview ? `<a href="${l.links.preview}">PREVIEW</a>`: ''}
                                 ${l.links.code ? `<a href="${l.links.code}">CODE</a>` : ''}
                             </div>

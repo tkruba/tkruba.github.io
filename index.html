@@ -19,8 +19,8 @@
             <h1>Tom Kruba</h1>
             <h2>Développeur web</h2>
             <ul id="links">
-                <li><a href="https://github.com/tkruba"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://linkedin.com/in/tom-kruba"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/tkruba" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/tom-kruba" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="./Assets/CV.pdf" target="_blank"><i class="fa-solid fa-file-lines"></i></a></li>
             </ul>
             <a href="#about" id="to_about">
@@ -48,16 +48,16 @@
         <div id="contact">
             <form id="contact_form" method="post">
                 <label class="basis-full" for="first_name">Prénom</br>
-                    <input type="text" name="first_name" id="first_name">
+                    <input type="text" name="first_name" id="first_name" required>
                 </label>
                 <label class="basis-full" for="last_name">Nom</br>
-                    <input type="text" name="last_name" id="last_name">
+                    <input type="text" name="last_name" id="last_name" required>
                 </label>
                 <label class="basis-full" for="email">Email</br>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </label>
                 <label class="basis-full" for="message">Message</br>
-                    <textarea type="text" name="message" id="message"></textarea>
+                    <textarea type="text" name="message" id="message" required></textarea>
                 </label>
                 <div class="form_submit">
                     <input type="submit" value="Envoyer">

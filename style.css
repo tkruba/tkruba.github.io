@@ -635,23 +635,44 @@ html {
 
 #home > h1 {
   position: relative;
-  top: 33.333333%;
   font-size: 3.75rem;
   line-height: 1;
   font-weight: 600;
 }
 
+@media (orientation: portrait) {
+  #home > h1 {
+    top: 33.333333%;
+  }
+}
+
+@media (orientation: landscape) {
+  #home > h1 {
+    top: 25%;
+  }
+}
+
 #home > h2 {
   position: relative;
-  top: 33.333333%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
+@media (orientation: portrait) {
+  #home > h2 {
+    top: 33.333333%;
+  }
+}
+
+@media (orientation: landscape) {
+  #home > h2 {
+    top: 25%;
+  }
+}
+
 #home > #links {
   position: relative;
-  top: 33.333333%;
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -659,6 +680,18 @@ html {
   gap: 2rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+@media (orientation: portrait) {
+  #home > #links {
+    top: 33.333333%;
+  }
+}
+
+@media (orientation: landscape) {
+  #home > #links {
+    top: 25%;
+  }
 }
 
 #home > #links > li {
@@ -703,7 +736,6 @@ html {
 
 #home > #to_about {
   position: absolute;
-  bottom: 33.333333%;
   left: 50%;
   right: 50%;
   height: 1rem;
@@ -742,6 +774,18 @@ html {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
   cursor: pointer;
+}
+
+@media (orientation: portrait) {
+  #home > #to_about {
+    bottom: 33.333333%;
+  }
+}
+
+@media (orientation: landscape) {
+  #home > #to_about {
+    bottom: 15%;
+  }
 }
 
 #home > #to_about > span {
@@ -800,6 +844,7 @@ html {
 
 #about > img {
   display: none;
+  aspect-ratio: 256/317;
   --tw-scale-x: -1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -950,53 +995,60 @@ html {
   }
 }
 
-#projects > ul > li > .card {
+#projects .card {
   overflow: hidden;
   border-radius: 0.5rem;
   border-width: 2px;
 }
 
-#projects > ul > li > .card > .card_top {
+#projects .card_top {
+  aspect-ratio: 16 / 9;
   border-bottom-width: 2px;
 }
 
-#projects > ul > li > .card > .card_mid {
+#projects .card_mid {
+  aspect-ratio: 4/2;
   border-bottom-width: 2px;
   padding: 1rem;
 }
 
-#projects > ul > li > .card > .card_mid > h3 {
+#projects .card_mid > h3 {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
 
-#projects > ul > li > .card > .card_mid > .project_desc {
-  border-bottom-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(110 231 183 / var(--tw-border-opacity));
+#projects .project_desc {
   text-align: justify;
 }
 
-#projects > ul > li > .card > .card_mid > .project_stacks {
-  margin-top: 1rem;
+#projects .card_bot {
+  padding-bottom: 0.5rem;
+}
+
+#projects .project_stacks {
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-#projects > ul > li > .card > .card_mid > .project_stacks > li > img {
+#projects .project_stacks > li > img {
   aspect-ratio: 1 / 1;
   width: 2.5rem;
 }
 
-#projects > ul > li > .card > .card_bot {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.25rem;
+#projects .line {
+  margin-bottom: 0.5rem;
+  height: 1px;
+  width: 100%;
+  border-bottom-width: 2px;
 }
 
 #projects > ul > li > .card > .card_bot > a {
+  margin-left: 0.25rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(110 231 183 / var(--tw-bg-opacity));
