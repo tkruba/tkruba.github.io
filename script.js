@@ -36,8 +36,15 @@ const observer = new IntersectionObserver(
 // Lance l'observation de la page
 observer.observe(observed);
 
+
+/*  Déclaration de la variable nécessaire
+    pour le bouton 'Vers la section à propos'
+*/
 const anchors = document.getElementsByTagName('a');
 
+/*  Ajoute un évènement 'click' au bouton
+    'Vers la section à propos'
+*/
 Array.prototype.forEach.call(anchors, el => {
     const ref = el.getAttribute('href');
     if (!ref || !ref.includes('#')) return;
@@ -52,6 +59,9 @@ Array.prototype.forEach.call(anchors, el => {
 });
 
 
+/*  Déclaration de la variable nécessaire
+    pour la 'liste de stacks'
+*/
 const docStacks = document.getElementById('stacks');
 async function getStacks() {
     const res = await fetch('./stacks.json');
@@ -64,6 +74,9 @@ async function getStacks() {
 }
 const stacks = getStacks();
 
+/*  Ajoute la liste de stacks à
+    la section 'A propos'
+*/
 function setStacks() {
     stacks.then(data => {
         console.log(data)
@@ -91,6 +104,9 @@ function setStacks() {
 }
 setStacks();
 
+/*  Déclaration de la variable nécessaire
+    pour la 'liste de projets'
+*/
 const docProjects = document.getElementById('projects');
 async function getProjects() {
     const res = await fetch('./projects.json');
@@ -103,6 +119,9 @@ async function getProjects() {
 }
 const projects = getProjects();
 
+/*  Ajoute la liste de projets à
+    la section 'Projets'
+*/
 function setProjects() {
     projects.then(data => {
         data.reverse();
